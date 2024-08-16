@@ -1,0 +1,23 @@
+body {
+    font-size: 40px;
+}
+/*  */
+.block {
+    background: red;
+}
+.bob-1 {width: 400px;
+height: 400px;}
+.bob-1 {
+    display: block
+}
+/* дисплей блок Собирает 
+изоброжение в столбик */
+.block {
+    display: inline-block;
+    width:400px;
+    margin: 50px 100px;
+    border: 10px dashed;
+
+}
+/* интел блок помогает разбить блочный элемент */
+.img {display: block;}
