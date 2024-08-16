@@ -1,0 +1,29 @@
+body {
+    font-size: 40px;
+}
+
+/*  */
+.block {
+    max-width: 1000px;
+    min-width: 800px;
+    /* width: 1000px; */
+    /* height: 600px; */
+    background: red;
+    max-height: 300px;
+    min-height: 100px;
+    box-shadow: inset 10px 15px 100px 30px #c92d9a;
+    /* бокс шадов .
+    inset-элемент тени в блоке
+    1-горизонталь оси
+    2 тень внизу
+    3 размытие тен
+    4 увелечение сомой тень-(не обязательный) */
+    border-radius: 20px;
+    margin: 50px 250px
+    
+}
+
+.bob-1 {
+    width: 400px;
+    height: 400px;
+}
