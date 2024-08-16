@@ -1,0 +1,36 @@
+body {
+    font-size: 30px;
+}
+
+.blo-2 {
+    width: 1475px;
+    height: 700px;
+    background: rgb(174, 188, 195);
+    overflow: auto;
+    height: 700px;
+
+}
+
+.blo-3 {
+    background: rgb(174, 133, 30);
+    width: 250px;
+    margin: 10px;
+    display: inline-block
+}
+
+.pop-1 {
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.blo-3 {
+    height: 230px;
+    padding: 5px 10px 60px 45px;
+    border-radius: 20px;
+
+}
+
+.blo-3 {
+    box-shadow: inset 10px 15px 100px -9px #292628;
+    max: height 200px; ;
+}
