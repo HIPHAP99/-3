@@ -1,0 +1,81 @@
+body {
+    background-color: #1d1d1f;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.wrapper {
+    padding: 50px;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.link {
+    display: block;
+    background-color: #555;
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 100px;
+    font-size: inherit;
+}
+
+.button {
+    display: block;
+    background-color: #555;
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: inherit;
+    color: inherit;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+/* ======================================================== */
+
+.link:hover {
+    background: rebeccapurple;width: 1000px;
+}
+.link:active {
+    background: black;
+}
+.block__title:hover {
+    color: red;
+}
+.button:active {
+    background: black;
+}
+
+.input:focus {
+    box-shadow: 0 0 20px 10px yellow;
+}
+:focus {
+    box-shadow: 0 0 20px 10px yellow;
+}
+/* //////////////////////////////// */
+.list__item:first-child {
+    color: #773e3e;
+}
+.list__item:last-child {
+    color: aqua;
+}
+.list__item:nth-child(3) {
+    color: #39b823;
+}
+/* нтх чилд можно в скобки добавить odd эементы перекрасятся
+по порядку , even перекрашивает не чет */
