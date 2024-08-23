@@ -1,0 +1,26 @@
+body {
+    font-size: 40px;
+}
+/*  */
+.block {
+    
+    padding: 30px; ;
+    margin: 50px 200px;
+    width: 400px;
+    height: 300px;
+    overflow: auto;
+    background: yellowgreen;
+    /* overflow auto-добовляет ползунок к тексту
+    hidden - обрезает текст до конца эелемента
+    scroll- добавлчет скрол по горизонаьли  */
+}
+.bob-1 {width: 400px;
+height: 400px;
+margin: 100px 400px;}
+.inline {
+    margin: 10px ;
+    /* opacity -прозрачность */
+    /* visibility: hidden;-не 
+    показывает видимость эелемента */
+    background: yellowgreen;
+    }
