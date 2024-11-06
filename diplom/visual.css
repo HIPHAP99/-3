@@ -1,0 +1,274 @@
+.container {
+    max-width: 1399px;
+    margin: 0 auto;
+
+}
+
+.header {
+    background: url(img/bg.png) 50% 100% / cover no-repeat;
+}
+
+.header__top {
+    padding: 42px 60px;
+}
+
+.header__top__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__logo img {
+    width: 280px;
+    height: 38px;
+}
+
+.nav__item-katalog {
+    border: 1px solid rgb(255, 255, 255);
+    width: 136px;
+    border-radius: 60px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: -12px 0px 0px;
+}
+
+.nav__item-katalog:hover {
+    background: rgb(244, 104, 63);
+    border: 1px solid rgb(244, 104, 63);
+}
+
+.nav__item-katalog:hover border {}
+
+.nav__list {
+    color: white;
+    display: flex;
+    gap: 4vh 40px;
+}
+
+.hero__inner {
+    margin: 80px 0px 0px 260px;
+}
+
+
+.hero__title {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    width: 680px;
+    height: 180px;
+    margin-bottom: 80px;
+}
+
+.hero__text {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 150%;
+    color: white;
+    width: 469px;
+    height: 76px;
+}
+
+
+
+
+.page-title {
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    width: 160px;
+    height: 140px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 20px 0px 0px 250px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+
+
+
+.socials {
+    line-height: 0;
+    margin: 30px 0px 40px -800px;
+
+}
+
+.socials__list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0 0 0 -15px;
+    justify-content: start;
+    margin-bottom: 180px;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    color: rgb(51, 51, 51);
+}
+
+.item img {
+    margin-bottom: 21.33px;
+}
+
+.container-title {
+    color: rgb(51, 51, 51);
+    font-size: 40px;
+    font-weight: 800;
+    margin: 200px 0px 60px 0px;
+}
+
+
+
+
+.container-katalog {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 150%;
+    width: 468px;
+    margin-bottom: 80px;
+}
+
+.card {
+    position: absolute;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 4px 80px 0px rgba(5, 9, 22, 0.08);
+    height: 600px;
+}
+
+.card-content {
+    margin: -60px 0px 0px 30px;
+
+}
+
+.max-men {
+    border-radius: 150px;
+    background: rgb(255, 255, 255);
+    width: 92px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: -270px;
+    left: 333px;
+    color: rgb(114, 116, 136);
+    gap: 9.33px;
+    cursor: default;
+}
+
+.love {
+    border-radius: 200px;
+    box-shadow: 0px 4px 20px 0px rgba(21, 22, 34, 0.2);
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: -100px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    left: 370px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+
+
+.house-title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+
+.house-details {
+    margin-bottom: 8px;
+    color: rgb(114, 116, 136);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    gap: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.price-info {
+    margin: 27px 0px 0px 30px;
+}
+
+.price {
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.button {
+    padding: 0px 0px 0px 100px;
+    color: rgb(244, 104, 63);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+
