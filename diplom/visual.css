@@ -1,5 +1,5 @@
 .container {
-    max-width: 1399px;
+    max-width: 1400px;
     margin: 0 auto;
 
 }
@@ -10,6 +10,7 @@
 
 .header__top {
     padding: 42px 60px;
+    margin-bottom: 140px;
 }
 
 .header__top__inner {
@@ -48,7 +49,7 @@
 }
 
 .hero__inner {
-    margin: 80px 0px 0px 260px;
+    margin: 80px 0px 0px 0px;
 }
 
 
@@ -84,7 +85,7 @@
     height: 140px;
     margin: 0 auto;
     overflow: hidden;
-    margin: 20px 0px 0px 250px;
+    margin: 60px 0px 0px 0px;
 }
 
 .slider {
@@ -135,6 +136,190 @@
     justify-content: center;
 }
 
+.grid__hero_broni {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 250px;
+
+}
+.hero__inner{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px ;
+}
+
+.broni {}
+
+.btn-text {
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 65px 12px 24px;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.btn-broni{
+    margin: 49px auto 0px;
+}
+.element__broni {
+    width: 360px;
+    height: 497px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0px 57px 0px;
+}
+
+
+.header-buttons {
+    width: 280px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid rgb(192, 194, 215);
+    border-radius: 200px;
+    background: rgb(255, 255, 255);
+    margin: 0px auto 0px;
+}
+
+.btn {
+    margin: 20px 20px;
+    background: #fff;
+    color: rgb(192, 194, 215);
+
+}
+
+.line {
+    width: 1px;
+    height: 35px;
+    background-color: #ccc;
+    margin: 0px 10px;
+}
+
+
+.input-number {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: rgb(192, 194, 215);
+    text-align: center;
+    cursor: pointer;
+}
+
+.people-count {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.people-title {
+    padding: 0px 0px 10px 17px;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.people-count__input {
+    box-sizing: border-box;
+    border: 2px solid rgb(192, 194, 215);
+    border-radius: 200px;
+    background: rgb(255, 255, 255);
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+}
+
+
+.filter {
+    padding: 30px;
+    width: 400px;
+}
+
+.filter>div {
+    padding-top: 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.filter>div>div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter .slider {
+    margin-top: 10px;
+    position: relative;
+    height: 1px;
+    background: rgb(128, 128, 128);
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.filter .color-range {
+    position: absolute;
+    background: rgb(128, 128, 128);
+    width: 97%;
+    border: none;
+    height: 1px;
+    left: 15px;
+}
+
+.filter .block-min,
+.block-max {
+    position: absolute;
+    left: 0;
+    top: -11.5px;
+    background: #fff;
+    border: 1px solid rgb(244, 104, 63);
+    z-index: 1;
+    border-radius: 200px;
+    background: rgb(244, 104, 63);
+    width: 8px;
+    height: 23px;
+}
+
+.filter .block-max {
+    left: 97%;
+}
+
+.button {
+    border-radius: 200px;
+    background: rgb(244, 104, 63);
+    width: 280px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+font-weight: 600;
+line-height: 150%;
+
+}
+
+
+/* main */
+
 
 
 
@@ -173,6 +358,7 @@
 
 
 
+
 .container-katalog {
     font-size: 40px;
     font-weight: 800;
@@ -182,7 +368,6 @@
 }
 
 .card {
-    position: absolute;
     gap: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -194,6 +379,8 @@
     box-shadow: 0px 4px 80px 0px rgba(5, 9, 22, 0.08);
     height: 600px;
 }
+
+
 
 .card-content {
     margin: -60px 0px 0px 30px;
@@ -263,12 +450,218 @@
     line-height: 150%;
 }
 
-.button {
-    padding: 0px 0px 0px 100px;
-    color: rgb(244, 104, 63);
+.button-btn {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    border-radius: 200px;
+    background: rgb(244, 104, 63);
+    width: 280px;
+    height: 50px;
+    margin: 80px 560px 250px;
+}
+
+.service {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    grid-row-gap: 40px;
+
+}
+
+.service-card {
+    border-radius: 20px;
+    box-shadow: 0px 4px 80px 0px rgba(5, 9, 22, 0.08);
+    background: rgb(255, 255, 255);
+    width: 440px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 0px 170px 0px 0px;
+}
+
+
+
+
+
+/* /слайдер/ */
+
+.accordion-container {
+    width: 1400px;
+    margin: 0 auto 250px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-style: solid none solid none;
+}
+
+.accordion-item__header {
+    background-color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 0 0;
+    margin-bottom: -10px;
+}
+
+.accordion-item__question {
+    flex-grow: 1;
+    margin-right: 10px;
     font-size: 22px;
     font-weight: 800;
     line-height: 150%;
 }
 
+.accordion-item__toggle {
+    font-size: 1.5em;
+}
 
+
+.accordion-item__content {
+    padding: 15px;
+    display: none;
+    border-radius: 0 0 0px 0px;
+}
+
+.accordion-item.active .accordion-item__content {
+    display: block;
+}
+
+.rent {
+    
+    background: url(img/bg_photo.png) 50% 100% / cover no-repeat;
+}
+
+.ten {
+    background: url(img/ten.png) 50% 100% / cover no-repeat;
+}
+
+.rent-block__title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 150%;
+    width: 373px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.rent-block__description {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    width: 360px;
+    height: 58px;
+    margin-bottom: 60px;
+}
+
+.rent-block__button {
+    border-radius: 200px;
+    background: rgb(244, 104, 63);
+    width: 260px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 280px;
+}
+
+.rent-block {
+    padding: 173px 0px 0px 180px;
+}
+
+/* футер */
+
+.footer {
+    height: 350px;
+    background: rgb(22, 23, 35);
+}
+
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 равные колонки */
+    gap: 10px;
+    /* Отступ между элементами */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 82px;
+    padding: 0px 0 0 80px;
+}
+
+.footer__column-title {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 150%;
+    margin-bottom: 17px;
+}
+
+.footer__column_title {
+    color: rgb(192, 194, 215);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.footer__column-list {
+    color: rgb(192, 194, 215);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.footer__column_list {
+    color: rgb(64, 66, 86);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+.footer__logo {
+    margin-top: 82px;
+}
+
+.footer__social {
+    margin-top: 149px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.footer__column_tel {
+    display: flex;
+    gap: 7px;
+    color: rgb(192, 194, 215);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 0 0 60px;
+}
+
+
+
+/* калькулятор */
