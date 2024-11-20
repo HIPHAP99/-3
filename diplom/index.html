@@ -5,50 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="dop.css">
+    <link href="swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="visual.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__top">
-                <div class="header__top__inner">
-                    <div class="header__logo">
-                        <img src="img/logo_light.png" alt="Логотип компании">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="img/logo_light.png" alt="Логотип компании">
+                </div>
+                <div class="header_left">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <img src="img/Vector.svg" alt="">
+                            <a href="#" class="nav__link">
+                                Казань
+                            </a>
+                        </li>
+                        <li class="nav__item-katalog">
+                            <a href="#" class="nav__link">
+                                Каталог
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__center">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Частые вопросы
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Сотрудничество
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_end">
+                    <div class="nav_love_lupa">
+                        <img src="img/header/love-love.svg" alt="" class="live__img">
+                        <img src="img/header/lupa.svg" alt="">
+                        <a href="#" class="nav__link">
+                            Поиск по названию
+                        </a>
                     </div>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <img src="img/Vector.svg" alt="">
-                                <a href="#" class="nav__link">
-                                    Московская область
-                                </a>
-                            </li>
-                            <li class="nav__item-katalog">
-                                <a href="#" class="nav__link">
-                                    Каталог
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">
-                                    Частые вопросы
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">
-                                    Поиск по названию
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <img src="img/telephone.svg" alt="">
-                                <a href="#" class="nav__link">
-                                    +7(977)-705-94-99
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="header__mobil">
+                        <img src="img/header/tele.svg" alt="">
+                        <a href="#" class="nav__link">
+                            8 (843) 528-65-48
+                        </a>
+                    </div>
                 </div>
                 <a class="burger-icon" href="#">
                     <span></span>
@@ -59,7 +74,7 @@
                     <div class="grid__hero_broni">
                         <div class="hero__inner">
                             <h1 class="hero__title">
-                                Аренда коттеджей и домов в Московской области
+                                Аренда коттеджей и домов в Казани
                             </h1>
                             <p class="hero__text">
                                 Найдите идеальный вариант сами или предоставьте это нам
@@ -109,125 +124,164 @@
                                     Найти
                                 </button>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <div class="slider-container">
-                    <div class="slider">
-                        <div class="slider-content">
-                            <img src="img/photo 1.png" alt="Белый пушистый кот">
-                            <img src="img/photo 2.png" alt="Рыжий пушистый кот в джинсах">
-                            <img src="img/photo 3.png" alt="Бело-рыжий пушистый кот">
-                            <img src="img/photo 4 (1).png" alt="Золотистый пушистый кот">
-                            <img src="img/photo 5.png" alt="Золотистый пушистый кот">
+                <!-- //////slaider_gallery -->
+                <div class="container">
+                    <div class="container__swiper">
+                        <div class="gallery___img">
+                            <div class="swiper gallery-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/swiper-home/photo-1.png" alt="">
+                                        <p class="title__paragraf">С бассейном</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/swiper-home/photo-2.png" alt="">
+                                        <p class="title__paragraf-2">Семейные и уютные</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/swiper-home/photo-3.png" alt="">
+                                        <p class="title__paragraf">Хиты продаж</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/swiper-home/photo-5.png" alt="">
+                                        <p class="title__paragraf">Под свадьбы и корпоративы</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/swiper-home/photo-4.png" alt="">
+                                        <p class="title__paragraf">С русской баней на дровах</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Навигация -->
+                            <div class="gallery__navigation">
+                                <button class="gallery__btn gallery__btn-prev">
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
+                                    </svg>
+                                </button>
+                                <button class="gallery__btn gallery__btn-next">
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 11L6.00001 6L1 0.999997" stroke="white" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
-                </div>
-                <address class="socials">
-                    <ul class="socials__list">
-                        <li class="socials__item">
-                            <a class="socials__link" href="#">
-                                <svg width="29.000000" height="20.000000" viewBox="0 0 29 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                        Created with Pixso.
-                                    </desc>
-                                    <defs />
-                                    <path id="youtube 1 (Traced)"
-                                        d="M11.97 0C7.11 0.16 4.95 0.31 3.82 0.57C2.95 0.78 2.24 1.18 1.61 1.83C0.94 2.52 0.63 3.11 0.42 4.13C-0.15 6.78 -0.15 13.21 0.42 15.85C0.63 16.88 0.95 17.48 1.6 18.15C2.26 18.82 3.06 19.25 4.01 19.44C5.97 19.83 12.71 20.09 17.41 19.96C22.01 19.83 24.35 19.65 25.4 19.35C26.79 18.96 27.89 17.94 28.37 16.62C29.09 14.61 29.22 7.28 28.59 4.2C28.36 3.09 27.93 2.31 27.2 1.65C26.55 1.07 25.85 0.72 24.98 0.54C24.02 0.35 21.97 0.18 19.39 0.08C17.95 0.02 13 -0.03 11.97 0ZM17.52 2.19C22 2.32 24.31 2.51 25.02 2.82C25.59 3.06 26 3.48 26.19 3.99C26.34 4.39 26.49 5.23 26.59 6.26C26.72 7.53 26.74 11.98 26.62 13.32C26.49 14.88 26.32 15.81 26.1 16.23C25.81 16.76 25.24 17.18 24.57 17.32C22.98 17.67 16.2 17.92 11.69 17.79C8.05 17.69 5.51 17.53 4.51 17.32C3.47 17.11 2.86 16.5 2.64 15.43C2.14 13.05 2.14 6.93 2.64 4.55C2.76 3.97 2.96 3.58 3.31 3.25C3.84 2.73 4.34 2.59 6.18 2.44C9.23 2.19 13.87 2.09 17.52 2.19ZM11.61 14.39L19.46 9.98C19.46 9.98 19.46 9.98 11.61 5.6L11.61 14.39Z"
-                                        fill="#C0C2D7" fill-opacity="1.000000" fill-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__link" href="#">
-                                <svg width="21.126953" height="21.127014" viewBox="0 0 21.127 21.127" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                        Created with Pixso.
-                                    </desc>
-                                    <defs />
-                                    <path id="Vector"
-                                        d="M10.56 7.39C9.72 7.39 8.91 7.72 8.32 8.32C7.72 8.91 7.39 9.72 7.39 10.56C7.39 11.4 7.72 12.21 8.32 12.8C8.91 13.39 9.72 13.73 10.56 13.73C11.4 13.73 12.21 13.39 12.8 12.8C13.39 12.21 13.73 11.4 13.73 10.56C13.73 9.72 13.39 8.91 12.8 8.32C12.21 7.72 11.4 7.39 10.56 7.39ZM10.56 5.28C11.96 5.28 13.3 5.83 14.29 6.82C15.28 7.81 15.84 9.16 15.84 10.56C15.84 11.96 15.28 13.3 14.29 14.29C13.3 15.28 11.96 15.84 10.56 15.84C9.16 15.84 7.81 15.28 6.82 14.29C5.83 13.3 5.28 11.96 5.28 10.56C5.28 9.16 5.83 7.81 6.82 6.82C7.81 5.83 9.16 5.28 10.56 5.28ZM17.42 5.01C17.42 5.36 17.29 5.7 17.04 5.95C16.79 6.19 16.45 6.33 16.1 6.33C15.75 6.33 15.42 6.19 15.17 5.95C14.92 5.7 14.78 5.36 14.78 5.01C14.78 4.66 14.92 4.33 15.17 4.08C15.42 3.83 15.75 3.69 16.1 3.69C16.45 3.69 16.79 3.83 17.04 4.08C17.29 4.33 17.42 4.66 17.42 5.01ZM10.56 2.11C7.95 2.11 7.52 2.12 6.3 2.17C5.47 2.21 4.92 2.32 4.4 2.52C3.94 2.7 3.61 2.91 3.26 3.26C2.93 3.58 2.68 3.97 2.52 4.4C2.32 4.92 2.21 5.48 2.17 6.3C2.11 7.47 2.11 7.88 2.11 10.56C2.11 13.17 2.12 13.6 2.17 14.81C2.21 15.64 2.32 16.2 2.52 16.71C2.7 17.17 2.91 17.5 3.26 17.85C3.62 18.21 3.95 18.42 4.4 18.6C4.92 18.8 5.48 18.91 6.3 18.95C7.47 19 7.88 19.01 10.56 19.01C13.17 19.01 13.6 19 14.81 18.95C15.64 18.91 16.2 18.8 16.71 18.6C17.17 18.42 17.5 18.21 17.85 17.86C18.21 17.5 18.42 17.17 18.6 16.72C18.8 16.2 18.91 15.64 18.95 14.81C19 13.65 19.01 13.24 19.01 10.56C19.01 7.95 19 7.52 18.95 6.3C18.91 5.48 18.8 4.92 18.6 4.4C18.44 3.97 18.18 3.58 17.85 3.26C17.54 2.93 17.15 2.68 16.71 2.52C16.2 2.32 15.64 2.21 14.81 2.17C13.65 2.11 13.24 2.11 10.56 2.11ZM10.56 0C13.43 0 13.79 0.01 14.91 0.06C16.04 0.11 16.8 0.29 17.48 0.55C18.17 0.82 18.76 1.18 19.35 1.77C19.89 2.3 20.3 2.93 20.57 3.64C20.83 4.31 21.01 5.08 21.06 6.2C21.11 7.33 21.12 7.69 21.12 10.56C21.12 13.43 21.11 13.79 21.06 14.91C21.01 16.04 20.83 16.8 20.57 17.48C20.3 18.18 19.89 18.82 19.35 19.35C18.82 19.89 18.18 20.3 17.48 20.57C16.8 20.83 16.04 21.01 14.91 21.06C13.79 21.11 13.43 21.12 10.56 21.12C7.69 21.12 7.33 21.11 6.2 21.06C5.08 21.01 4.31 20.83 3.64 20.57C2.93 20.3 2.3 19.89 1.77 19.35C1.23 18.82 0.81 18.18 0.55 17.48C0.29 16.8 0.11 16.04 0.06 14.91C0.01 13.79 0 13.43 0 10.56C0 7.69 0.01 7.33 0.06 6.2C0.11 5.08 0.29 4.31 0.55 3.64C0.81 2.93 1.23 2.29 1.77 1.77C2.3 1.23 2.93 0.81 3.64 0.55C4.31 0.29 5.08 0.11 6.2 0.06C7.33 0.01 7.69 0 10.56 0Z"
-                                        fill="#C0C2D7" fill-opacity="1.000000" fill-rule="nonzero" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__link" href="#">
-                                <svg width="21.895264" height="13.828552" viewBox="0 0 21.8953 13.8286" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                        Created with Pixso.
-                                    </desc>
-                                    <defs />
-                                    <path id="logo_vk"
-                                        d="M11.92 13.82C4.44 13.82 0.17 8.63 0 0L3.74 0C3.87 6.33 6.63 9.02 8.82 9.57L8.82 0L12.34 0L12.34 5.46C14.51 5.23 16.78 2.74 17.54 0L21.07 0C20.48 3.37 18.02 5.86 16.27 6.89C18.02 7.72 20.82 9.89 21.89 13.82L18.01 13.82C17.17 11.19 15.09 9.16 12.34 8.88L12.34 13.82L11.92 13.82Z"
-                                        fill="#C0C2D7" fill-opacity="1.000000" fill-rule="nonzero" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__link" href="#">
-                                <svg width="23.000000" height="23.000000" viewBox="0 0 23 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                        Created with Pixso.
-                                    </desc>
-                                    <defs />
-                                    <path id="whatsapp (Traced)"
-                                        d="M10.17 0.06C4.86 0.72 0.68 4.96 0.13 10.25C0.05 11.04 0.1 12.53 0.23 13.28C0.44 14.46 0.78 15.51 1.32 16.58L1.6 17.12L0.79 20.05C0.34 21.66 -0.01 22.99 0 22.99C0 23 1.36 22.65 3 22.22C5.4 21.59 6.02 21.44 6.12 21.48C6.18 21.51 6.5 21.64 6.82 21.79C7.85 22.25 8.94 22.56 10.08 22.72C10.88 22.82 12.27 22.82 13.05 22.72C15.58 22.36 17.85 21.25 19.64 19.47C20.57 18.55 21.19 17.7 21.78 16.54C22.32 15.5 22.69 14.36 22.9 13.16C23.03 12.46 23.03 10.4 22.9 9.66C22.7 8.42 22.37 7.42 21.83 6.32C20.27 3.2 17.39 0.98 13.95 0.23C12.88 0 11.28 -0.07 10.17 0.06ZM13.19 2.05C14.58 2.3 15.72 2.76 16.86 3.52C18.8 4.81 20.23 6.81 20.79 9.03C21.2 10.66 21.17 12.51 20.7 14.08C19.94 16.61 18.13 18.75 15.75 19.9C14.37 20.57 13.1 20.86 11.55 20.86C9.77 20.86 8.2 20.44 6.6 19.52L6.33 19.36L4.55 19.83C3.57 20.08 2.76 20.28 2.76 20.27C2.75 20.26 2.95 19.5 3.2 18.58C3.46 17.66 3.66 16.88 3.67 16.84C3.67 16.79 3.54 16.56 3.39 16.31C1.11 12.62 1.71 7.77 4.82 4.69C6.36 3.17 8.32 2.23 10.51 1.96C11.1 1.89 12.58 1.94 13.19 2.05ZM7.04 6.24C6.76 6.37 6.25 6.97 6.04 7.41C5.62 8.28 5.63 9.37 6.06 10.38C6.6 11.62 7.99 13.39 9.37 14.56C10.33 15.38 11.14 15.86 12.32 16.32C13.53 16.8 13.76 16.85 14.57 16.85C15.2 16.85 15.3 16.84 15.59 16.73C16.07 16.55 16.44 16.32 16.79 15.97C17.07 15.69 17.13 15.61 17.22 15.32C17.33 14.96 17.4 14.38 17.35 14.17C17.32 14.07 17.18 13.98 16.5 13.64C15.24 13.02 14.74 12.8 14.52 12.8C14.34 12.8 14.31 12.82 14.1 13.1C13.61 13.74 13.17 14.23 13.05 14.26C12.91 14.3 12.64 14.2 12 13.88C10.98 13.37 10.14 12.68 9.42 11.77C9.03 11.27 8.68 10.7 8.68 10.57C8.68 10.51 8.86 10.23 9.08 9.94C9.52 9.38 9.64 9.17 9.64 9.01C9.64 8.96 9.55 8.69 9.43 8.42C9.32 8.15 9.09 7.6 8.92 7.19C8.71 6.68 8.56 6.39 8.45 6.29L8.3 6.13L7.78 6.13C7.34 6.13 7.22 6.15 7.04 6.24Z"
-                                        fill="#C0C2D7" fill-opacity="1.000000" fill-rule="evenodd" />
-                                </svg>
+                    <!-- social -->
+                    <address class="socials">
+                        <div class="socials_flex">
+                            <ul class="socials__list">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg width="29.000000" height="20.000000" viewBox="0 0 29 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>
+                                                Created with Pixso.
+                                            </desc>
+                                            <defs />
+                                            <path id="youtube 1 (Traced)"
+                                                d="M11.97 0C7.11 0.16 4.95 0.31 3.82 0.57C2.95 0.78 2.24 1.18 1.61 1.83C0.94 2.52 0.63 3.11 0.42 4.13C-0.15 6.78 -0.15 13.21 0.42 15.85C0.63 16.88 0.95 17.48 1.6 18.15C2.26 18.82 3.06 19.25 4.01 19.44C5.97 19.83 12.71 20.09 17.41 19.96C22.01 19.83 24.35 19.65 25.4 19.35C26.79 18.96 27.89 17.94 28.37 16.62C29.09 14.61 29.22 7.28 28.59 4.2C28.36 3.09 27.93 2.31 27.2 1.65C26.55 1.07 25.85 0.72 24.98 0.54C24.02 0.35 21.97 0.18 19.39 0.08C17.95 0.02 13 -0.03 11.97 0ZM17.52 2.19C22 2.32 24.31 2.51 25.02 2.82C25.59 3.06 26 3.48 26.19 3.99C26.34 4.39 26.49 5.23 26.59 6.26C26.72 7.53 26.74 11.98 26.62 13.32C26.49 14.88 26.32 15.81 26.1 16.23C25.81 16.76 25.24 17.18 24.57 17.32C22.98 17.67 16.2 17.92 11.69 17.79C8.05 17.69 5.51 17.53 4.51 17.32C3.47 17.11 2.86 16.5 2.64 15.43C2.14 13.05 2.14 6.93 2.64 4.55C2.76 3.97 2.96 3.58 3.31 3.25C3.84 2.73 4.34 2.59 6.18 2.44C9.23 2.19 13.87 2.09 17.52 2.19ZM11.61 14.39L19.46 9.98C19.46 9.98 19.46 9.98 11.61 5.6L11.61 14.39Z"
+                                                fill="#C0C2D7" fill-opacity="1.000000" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg width="21.126953" height="21.127014" viewBox="0 0 21.127 21.127"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>
+                                                Created with Pixso.
+                                            </desc>
+                                            <defs />
+                                            <path id="Vector"
+                                                d="M10.56 7.39C9.72 7.39 8.91 7.72 8.32 8.32C7.72 8.91 7.39 9.72 7.39 10.56C7.39 11.4 7.72 12.21 8.32 12.8C8.91 13.39 9.72 13.73 10.56 13.73C11.4 13.73 12.21 13.39 12.8 12.8C13.39 12.21 13.73 11.4 13.73 10.56C13.73 9.72 13.39 8.91 12.8 8.32C12.21 7.72 11.4 7.39 10.56 7.39ZM10.56 5.28C11.96 5.28 13.3 5.83 14.29 6.82C15.28 7.81 15.84 9.16 15.84 10.56C15.84 11.96 15.28 13.3 14.29 14.29C13.3 15.28 11.96 15.84 10.56 15.84C9.16 15.84 7.81 15.28 6.82 14.29C5.83 13.3 5.28 11.96 5.28 10.56C5.28 9.16 5.83 7.81 6.82 6.82C7.81 5.83 9.16 5.28 10.56 5.28ZM17.42 5.01C17.42 5.36 17.29 5.7 17.04 5.95C16.79 6.19 16.45 6.33 16.1 6.33C15.75 6.33 15.42 6.19 15.17 5.95C14.92 5.7 14.78 5.36 14.78 5.01C14.78 4.66 14.92 4.33 15.17 4.08C15.42 3.83 15.75 3.69 16.1 3.69C16.45 3.69 16.79 3.83 17.04 4.08C17.29 4.33 17.42 4.66 17.42 5.01ZM10.56 2.11C7.95 2.11 7.52 2.12 6.3 2.17C5.47 2.21 4.92 2.32 4.4 2.52C3.94 2.7 3.61 2.91 3.26 3.26C2.93 3.58 2.68 3.97 2.52 4.4C2.32 4.92 2.21 5.48 2.17 6.3C2.11 7.47 2.11 7.88 2.11 10.56C2.11 13.17 2.12 13.6 2.17 14.81C2.21 15.64 2.32 16.2 2.52 16.71C2.7 17.17 2.91 17.5 3.26 17.85C3.62 18.21 3.95 18.42 4.4 18.6C4.92 18.8 5.48 18.91 6.3 18.95C7.47 19 7.88 19.01 10.56 19.01C13.17 19.01 13.6 19 14.81 18.95C15.64 18.91 16.2 18.8 16.71 18.6C17.17 18.42 17.5 18.21 17.85 17.86C18.21 17.5 18.42 17.17 18.6 16.72C18.8 16.2 18.91 15.64 18.95 14.81C19 13.65 19.01 13.24 19.01 10.56C19.01 7.95 19 7.52 18.95 6.3C18.91 5.48 18.8 4.92 18.6 4.4C18.44 3.97 18.18 3.58 17.85 3.26C17.54 2.93 17.15 2.68 16.71 2.52C16.2 2.32 15.64 2.21 14.81 2.17C13.65 2.11 13.24 2.11 10.56 2.11ZM10.56 0C13.43 0 13.79 0.01 14.91 0.06C16.04 0.11 16.8 0.29 17.48 0.55C18.17 0.82 18.76 1.18 19.35 1.77C19.89 2.3 20.3 2.93 20.57 3.64C20.83 4.31 21.01 5.08 21.06 6.2C21.11 7.33 21.12 7.69 21.12 10.56C21.12 13.43 21.11 13.79 21.06 14.91C21.01 16.04 20.83 16.8 20.57 17.48C20.3 18.18 19.89 18.82 19.35 19.35C18.82 19.89 18.18 20.3 17.48 20.57C16.8 20.83 16.04 21.01 14.91 21.06C13.79 21.11 13.43 21.12 10.56 21.12C7.69 21.12 7.33 21.11 6.2 21.06C5.08 21.01 4.31 20.83 3.64 20.57C2.93 20.3 2.3 19.89 1.77 19.35C1.23 18.82 0.81 18.18 0.55 17.48C0.29 16.8 0.11 16.04 0.06 14.91C0.01 13.79 0 13.43 0 10.56C0 7.69 0.01 7.33 0.06 6.2C0.11 5.08 0.29 4.31 0.55 3.64C0.81 2.93 1.23 2.29 1.77 1.77C2.3 1.23 2.93 0.81 3.64 0.55C4.31 0.29 5.08 0.11 6.2 0.06C7.33 0.01 7.69 0 10.56 0Z"
+                                                fill="#C0C2D7" fill-opacity="1.000000" fill-rule="nonzero" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg width="21.895264" height="13.828552" viewBox="0 0 21.8953 13.8286"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>
+                                                Created with Pixso.
+                                            </desc>
+                                            <defs />
+                                            <path id="logo_vk"
+                                                d="M11.92 13.82C4.44 13.82 0.17 8.63 0 0L3.74 0C3.87 6.33 6.63 9.02 8.82 9.57L8.82 0L12.34 0L12.34 5.46C14.51 5.23 16.78 2.74 17.54 0L21.07 0C20.48 3.37 18.02 5.86 16.27 6.89C18.02 7.72 20.82 9.89 21.89 13.82L18.01 13.82C17.17 11.19 15.09 9.16 12.34 8.88L12.34 13.82L11.92 13.82Z"
+                                                fill="#C0C2D7" fill-opacity="1.000000" fill-rule="nonzero" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg width="23.000000" height="23.000000" viewBox="0 0 23 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>
+                                                Created with Pixso.
+                                            </desc>
+                                            <defs />
+                                            <path id="whatsapp (Traced)"
+                                                d="M10.17 0.06C4.86 0.72 0.68 4.96 0.13 10.25C0.05 11.04 0.1 12.53 0.23 13.28C0.44 14.46 0.78 15.51 1.32 16.58L1.6 17.12L0.79 20.05C0.34 21.66 -0.01 22.99 0 22.99C0 23 1.36 22.65 3 22.22C5.4 21.59 6.02 21.44 6.12 21.48C6.18 21.51 6.5 21.64 6.82 21.79C7.85 22.25 8.94 22.56 10.08 22.72C10.88 22.82 12.27 22.82 13.05 22.72C15.58 22.36 17.85 21.25 19.64 19.47C20.57 18.55 21.19 17.7 21.78 16.54C22.32 15.5 22.69 14.36 22.9 13.16C23.03 12.46 23.03 10.4 22.9 9.66C22.7 8.42 22.37 7.42 21.83 6.32C20.27 3.2 17.39 0.98 13.95 0.23C12.88 0 11.28 -0.07 10.17 0.06ZM13.19 2.05C14.58 2.3 15.72 2.76 16.86 3.52C18.8 4.81 20.23 6.81 20.79 9.03C21.2 10.66 21.17 12.51 20.7 14.08C19.94 16.61 18.13 18.75 15.75 19.9C14.37 20.57 13.1 20.86 11.55 20.86C9.77 20.86 8.2 20.44 6.6 19.52L6.33 19.36L4.55 19.83C3.57 20.08 2.76 20.28 2.76 20.27C2.75 20.26 2.95 19.5 3.2 18.58C3.46 17.66 3.66 16.88 3.67 16.84C3.67 16.79 3.54 16.56 3.39 16.31C1.11 12.62 1.71 7.77 4.82 4.69C6.36 3.17 8.32 2.23 10.51 1.96C11.1 1.89 12.58 1.94 13.19 2.05ZM7.04 6.24C6.76 6.37 6.25 6.97 6.04 7.41C5.62 8.28 5.63 9.37 6.06 10.38C6.6 11.62 7.99 13.39 9.37 14.56C10.33 15.38 11.14 15.86 12.32 16.32C13.53 16.8 13.76 16.85 14.57 16.85C15.2 16.85 15.3 16.84 15.59 16.73C16.07 16.55 16.44 16.32 16.79 15.97C17.07 15.69 17.13 15.61 17.22 15.32C17.33 14.96 17.4 14.38 17.35 14.17C17.32 14.07 17.18 13.98 16.5 13.64C15.24 13.02 14.74 12.8 14.52 12.8C14.34 12.8 14.31 12.82 14.1 13.1C13.61 13.74 13.17 14.23 13.05 14.26C12.91 14.3 12.64 14.2 12 13.88C10.98 13.37 10.14 12.68 9.42 11.77C9.03 11.27 8.68 10.7 8.68 10.57C8.68 10.51 8.86 10.23 9.08 9.94C9.52 9.38 9.64 9.17 9.64 9.01C9.64 8.96 9.55 8.69 9.43 8.42C9.32 8.15 9.09 7.6 8.92 7.19C8.71 6.68 8.56 6.39 8.45 6.29L8.3 6.13L7.78 6.13C7.34 6.13 7.22 6.15 7.04 6.24Z"
+                                                fill="#C0C2D7" fill-opacity="1.000000" fill-rule="evenodd" />
+                                        </svg>
 
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__link" href="#">
-                                <svg width="20.000000" height="18.000000" viewBox="0 0 20 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                        Created with Pixso.
-                                    </desc>
-                                    <defs />
-                                    <path id="telegram (Traced)"
-                                        d="M18.92 0.05C18.81 0.08 16.8 0.89 14.45 1.86C12.09 2.82 8.05 4.47 5.46 5.53C2.87 6.59 0.66 7.51 0.54 7.57C0.3 7.69 0.05 7.95 0.01 8.12C-0.06 8.39 0.12 8.73 0.45 8.94C0.66 9.09 5.01 10.64 5.12 10.61C5.15 10.6 7.74 8.9 10.86 6.84C13.98 4.77 16.58 3.06 16.64 3.04C16.79 2.98 16.99 3.01 17.04 3.09C17.15 3.28 17.36 3.08 10.22 9.77C8.01 11.83 7.85 11.99 7.92 12.05C7.95 12.09 9.6 13.41 11.58 14.99C14.26 17.13 15.22 17.87 15.37 17.92C15.65 18.03 15.99 18.02 16.23 17.9C16.41 17.81 16.69 17.54 16.79 17.36C16.83 17.27 20 0.68 20 0.54C19.99 0.37 19.85 0.13 19.71 0.06C19.55 -0.02 19.2 -0.03 18.92 0.05Z"
-                                        fill="#C0C2D7" fill-opacity="1.000000" fill-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </address>
-                <br>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg width="20.000000" height="18.000000" viewBox="0 0 20 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>
+                                                Created with Pixso.
+                                            </desc>
+                                            <defs />
+                                            <path id="telegram (Traced)"
+                                                d="M18.92 0.05C18.81 0.08 16.8 0.89 14.45 1.86C12.09 2.82 8.05 4.47 5.46 5.53C2.87 6.59 0.66 7.51 0.54 7.57C0.3 7.69 0.05 7.95 0.01 8.12C-0.06 8.39 0.12 8.73 0.45 8.94C0.66 9.09 5.01 10.64 5.12 10.61C5.15 10.6 7.74 8.9 10.86 6.84C13.98 4.77 16.58 3.06 16.64 3.04C16.79 2.98 16.99 3.01 17.04 3.09C17.15 3.28 17.36 3.08 10.22 9.77C8.01 11.83 7.85 11.99 7.92 12.05C7.95 12.09 9.6 13.41 11.58 14.99C14.26 17.13 15.22 17.87 15.37 17.92C15.65 18.03 15.99 18.02 16.23 17.9C16.41 17.81 16.69 17.54 16.79 17.36C16.83 17.27 20 0.68 20 0.54C19.99 0.37 19.85 0.13 19.71 0.06C19.55 -0.02 19.2 -0.03 18.92 0.05Z"
+                                                fill="#C0C2D7" fill-opacity="1.000000" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </address>
+                </div>
             </section>
         </header>
         <main>
             <section>
                 <div class="container">
-                        <div class="container-title">
-                            <h2>
-                                О нас
-                            </h2>
+                    <div class="container-title">
+                        <h2>
+                            О нас
+                        </h2>
+                    </div>
+                    <div class="container-grid">
+                        <div class="item"><img src="img/document.png" alt="">
+                            <p>Работаем с юридическими и физическими лицами</p>
                         </div>
-                        <div class="container-grid">
-                            <div class="item"><img src="img/document.png" alt="">
-                                <p>Работаем с юридическими и физическими лицами</p>
-                            </div>
-                            <div class="item"><img src="img/mp3.png" alt="">
-                                <p>Бесплатный подбор, честные консультации и открытость к сотрудничеству</p>
-                            </div>
-                            <div class="item"><img src="img/men.png" alt="">
-                                <p>Работаем с 2014 года. Консультируем 30-80 человек в сутки, заселяем от 3 до 5 компаний в
-                                    день.
-                                    Помогли более 21 000 клиентам</p>
-                            </div>
-                            <div class="item-twu"><img src="img/zvezda.png" alt="">
-                                <p>Средний рейтинг компании 4,5 из 5 (Avito, Google, Отзовик)</p>
-                            </div>
+                        <div class="item"><img src="img/mp3.png" alt="">
+                            <p>Бесплатный подбор, честные консультации и открытость к сотрудничеству</p>
                         </div>
+                        <div class="item"><img src="img/men.png" alt="">
+                            <p>Работаем с 2014 года. Консультируем 30-80 человек в сутки, заселяем от 3 до 5 компаний в
+                                день.
+                                Помогли более 21 000 клиентам</p>
+                        </div>
+                        <div class="item"><img src="img/zvezda.png" alt="">
+                            <p>Средний рейтинг компании 4,5 из 5 (Avito, Google, Отзовик)</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section>
@@ -265,20 +319,20 @@
                             </div>
                             <div class="price-info">
                                 <span class="price">от 10 000 ₽ / сутки</span>
-                                <span class="button">Подробнее</span>
+                                <span class="button__info">Подробнее</span>
                             </div>
                         </div>
                         <div class="card-img">
                             <img src="img/home/img-2.png" alt="">
                             <div class="max-men">
-                                <img src="img/men-2.svg" alt="">до 30
+                                <img src="img/men-2.svg" alt="">до 9
                             </div>
                             <div class="love">
                                 <img src="img/love-2.svg" alt="">
                             </div>
                             <div class="card-content">
                                 <h2 class="house-title">
-                                    Новая сосновка
+                                    Салмачи 1
                                 </h2>
                                 <p class="house-details">
                                     <img src="img/eskiz/bed.svg" alt=""> 5 спальных мест
@@ -295,7 +349,7 @@
                             </div>
                             <div class="price-info">
                                 <span class="price">от 10 000 ₽ / сутки</span>
-                                <span class="button">Подробнее</span>
+                                <span class="button__info">Подробнее</span>
                             </div>
                         </div>
                         <div class="card-img">
@@ -325,7 +379,7 @@
                             </div>
                             <div class="price-info">
                                 <span class="price">от 10 000 ₽ / сутки</span>
-                                <span class="button">Подробнее</span>
+                                <span class="button__info">Подробнее</span>
                             </div>
                         </div>
                         <div class="card-img">
@@ -355,13 +409,13 @@
                             </div>
                             <div class="price-info">
                                 <span class="price">от 10 000 ₽ / сутки</span>
-                                <span class="button">Подробнее</span>
+                                <span class="button__info">Подробнее</span>
                             </div>
                         </div>
                         <div class="card-img">
                             <img src="img/home/img-5.png" alt="">
                             <div class="max-men">
-                                <img src="img/men-2.svg" alt="">до 30
+                                <img src="img/men-2.svg" alt="">до 14
                             </div>
                             <div class="love">
                                 <img src="img/love-2.svg" alt="">
@@ -384,14 +438,14 @@
                                 </p>
                             </div>
                             <div class="price-info">
-                                <span class="price">от 10 000 ₽ / сутки</span>
-                                <span class="button">Подробнее</span>
+                                <span class="price">от 8500 ₽ / сутки</span>
+                                <span class="button__info">Подробнее</span>
                             </div>
                         </div>
                         <div class="card-img">
                             <img src="img/home/img-6.png" alt="">
                             <div class="max-men">
-                                <img src="img/men-2.svg" alt="">до 30
+                                <img src="img/men-2.svg" alt="">до 6
                             </div>
                             <div class="love">
                                 <img src="img/love-2.svg" alt="">
@@ -414,8 +468,8 @@
                                 </p>
                             </div>
                             <div class="price-info">
-                                <span class="price">от 10 000 ₽ / сутки</span>
-                                <span class="button">Подробнее</span>
+                                <span class="price">от 4000 ₽ / сутки</span>
+                                <span class="button__info">Подробнее</span>
                             </div>
                         </div>
                     </div>
@@ -542,18 +596,20 @@
                     </div>
                 </div>
             </section>
-            <section class="rent">
-                <div class="ten">
-                    <div class="container">
-                        <div class="rent-block">
-                            <h2 class="rent-block__title">Хотите сдать дом?</h2>
-                            <p class="rent-block__description">Оставьте заявку и мы свяжемся с вами для уточнения
-                                деталей.
-                            </p>
-                            <button class="rent-block__button">Оставить заявку</button>
+            <section >
+               <div class="rent">
+                    <div class="ten">
+                        <div class="container">
+                            <div class="rent-block">
+                                <h2 class="rent-block__title">Хотите сдать дом?</h2>
+                                <p class="rent-block__description">Оставьте заявку и мы свяжемся с вами для уточнения
+                                    деталей.
+                                </p>
+                                <button class="rent-block__button">Оставить заявку</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+               </div>
             </section>
         </main>
         <footer class="footer">
@@ -602,9 +658,9 @@
                 </div>
             </div>
         </footer>
-
     </div>
-    <script src="script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
